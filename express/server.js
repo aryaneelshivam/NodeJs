@@ -25,6 +25,6 @@ obj.post('/write', encoded, (req,res)=>{
     
 })
 
-obj.listen(3000,()=>{
-    console.log("Server started at port 3000")
+obj.listen(8000,()=>{
+    console.log("Server started at port 8000")
 })

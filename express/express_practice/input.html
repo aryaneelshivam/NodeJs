@@ -1,0 +1,29 @@
+<html>
+
+<head>
+<title>Key Logger Demo</title>
+</head>
+
+<body>
+
+<h2>Realtime Key Logger Demo</h2>
+<input type="text" id="box" placeholder="Type here">
+
+<script>
+
+const input = document.getElementById("box");
+
+input.addEventListener("keyup", function(e){
+
+    fetch("/log", { 
+        method: "POST", 
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({key: e.key})
+    });
+
+});
+
+</script>
+
+</body>
+</html>

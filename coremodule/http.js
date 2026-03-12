@@ -1,7 +1,7 @@
 var httpserve = require('http')
 
 httpserve.createServer((req,res)=>{
-    res.writeHead(200, {"content-type":"text/html"} ) //function to tell browser we have HTML content
+    res.writeHead(200, {"content-tycpe":"text/html"} ) //function to tell browser we have HTML content
     res.write("Hello server response <br>")
     res.write("Aryaneel Hello Bello Mello <br>")
     var a = 10
